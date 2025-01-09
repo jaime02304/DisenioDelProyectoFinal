@@ -1,3 +1,4 @@
+// LA PARTE DEL MENU DESPLEGABLE EN MOVIL
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menuToggle");
     const menuOpciones = document.getElementById("menuOpciones");
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         menuOpciones.style.display = isVisible ? "none" : "block";
     });
 
-    // Opcional: Cerrar el menú al hacer clic fuera de él
+    //Cerrar el menú al hacer clic fuera de él
     document.addEventListener("click", (event) => {
         if (!menuOpciones.contains(event.target) && !menuToggle.contains(event.target)) {
             menuOpciones.style.display = "none";
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// PARTE DEL CARRUSEL
 const usuarios = [
     {
         nombre: "Juan",
@@ -34,7 +36,6 @@ const usuarios = [
 ];
 
 let indiceActual = 0;
-
 function actualizarCarrusel() {
     const usuario = usuarios[indiceActual];
     document.getElementById('titulo-usuario').textContent = usuario.nombre;
@@ -46,18 +47,23 @@ function usuarioSiguiente() {
     indiceActual = (indiceActual + 1) % usuarios.length;
     actualizarCarrusel();
 }
-
 function usuarioAnterior() {
     indiceActual = (indiceActual - 1 + usuarios.length) % usuarios.length;
     actualizarCarrusel();
 }
-
 // Inicializar el carrusel
 actualizarCarrusel();
 
+let intervaloCarrusel = setInterval(usuarioSiguiente, 6000);
+// Pausar el intervalo al interactuar manualmente
+document.querySelector(".botones").addEventListener("click", () => {
+    clearInterval(intervaloCarrusel); // Detiene el intervalo
+});
+
+// PARTE DEL BOTON DE ME GUSTA
 const boton = document.querySelector('.corazonBoton');
 // Agrega un evento para manejar el clic
-boton.addEventListener('click', function() {
-  // Alterna la clase 'clicado' en el botón
-  boton.classList.toggle('clicado');
+boton.addEventListener('click', function () {
+    // Alterna la clase 'clicado' en el botón
+    boton.classList.toggle('clicado');
 });
