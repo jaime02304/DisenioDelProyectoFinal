@@ -11,6 +11,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,12 +34,12 @@
               VIDEOJUEGOS
             </button></a>
           <a href="#" class="d-xl-none d-md-block d-none"><button class="botonNavegador botonCategoria">
-              CATEGORIA
+              CATEGORÍA
             </button></a>
           <a href="#" class="d-lg-block d-none"><button class="botonNavegador botonComentarios">
               COMENTARIOS
             </button></a>
-            <!-- Aqui deberia de poner una condicion que si es admin coja una cosa y si no que haga la otra -->
+          <!-- Aqui deberia de poner una condicion que si es admin coja una cosa y si no que haga la otra -->
           <a href="#"><button class="botonIconoIS">
               <i class="fas fa-user icono"></i></button></a>
           <a href="#"><button class="botonNavegador botonAdmin">ADMIN</button></a>
@@ -57,22 +59,68 @@
           </a>
         </div>
 
-        <!-- Columna de los botones (a la derecha) -->
+        <!-- MENU-->
         <div class="boton-contenedor2">
-          <a href="#"><button class="botonNavegador botonAdmin">ADMIN</button></a>
-          <button class="botonNavegador2 d-block d-md-none">
+          <button class="botonNavegador2 d-block d-md-none" id="menuToggle">
             <i class="fa-solid fa-bars"></i>
           </button>
+          <div class="menu-desplegable" id="menuOpciones">
+            <a href="#">GRUPOS</a>
+            <a href="#">CATEGORÍA</a>
+            <a href="#">COMENTARIOS</a>
+            <!--AQUI DEBERIA DE PONER LA CONDICION EN LA CUAL SI SE INICIA SESION PONDRA PERFIL USUARIO O PERFIL ADMINISTRADOR-->
+            <a href="#">INICIAR SESION</a>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- Aqui comienza la parte Main-->
-   <main>
-    
-   </main>
+  <main class="contenedorMain">
+    <!-- Parte PC -->
+    <div class="container d-none d-xl-block">
+      <div class="row">
+        <div class="col">
+          <div class="contenedor-carrusel">
+            <div class="botones">
+              <button onclick="usuarioAnterior()" class="boton1"> <i class="fas fa-arrow-left"></i></button>
+              <button onclick="usuarioSiguiente()" class="boton2"> <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div id="contenido-carrusel">
+              <div class="titulo-usuario" id="titulo-usuario">Nombre del Usuario</div>
+              <div class="contenedorTextoEImagen">
+                <img src="https://via.placeholder.com/100" alt="Imagen del Usuario" class="imagen-usuario"
+                  id="imagen-usuario">
+                <div class="texto-usuario" id="texto-usuario">Texto del usuario</div>
+                <div class="contenedorBoton"><button class="corazonBoton" type="button"><i
+                      class="fas fa-heart"></i></button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col parteDerechaMain">
+          <div class="row">
+            <div class="col">
+              <div class="zonaBienvenida">
+                <div class="tituloBienvenida">Bienvenido</div>
+                <div class="contenedorTextoBienvenida">
+                  ¡Bienvenid@ a AnimeXP! 🌟
+                  El espacio donde el anime, los videojuegos y la pasión de los fans se encuentran. 🎮✨
+                  Descubre contenidos épicos, conecta con una comunidad increíble y vive tu afición como nunca antes. 🧡
+                  ¡Explora, juega y siéntete como en casa! 🚀</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="zonaGruposMain"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
+  <script src="javaScript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
