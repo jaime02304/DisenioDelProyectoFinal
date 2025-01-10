@@ -211,10 +211,10 @@ a {
 }
 
 .contenedor-carrusel {
-  max-width: 470px;
-  height: 650px;
+  width: 100%;
+  height: 750px;
   margin-top: 50px;
-  border: 1px solid #01137a;
+  border: 1px solid #01137ac2;
   background-color: rgba(11, 17, 49, 0.6);
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -259,9 +259,9 @@ a {
   text-transform: uppercase;
 }
 .contenedorTextoEImagen {
-  width: 370px;
-  height: 500px;
-  background-color: aliceblue;
+  width: 90%;
+  height: 600px;
+  background-color:  rgb(206, 206, 206);;
   border: 1.5px solid black;
   border-radius: 20px;
   display: flex;
@@ -271,14 +271,15 @@ a {
 }
 .imagen-usuario {
   border: 1.5px solid black;
-  width: 250px;
-  height: 120px;
+  width: 70%;
+  min-height: 120px;
+  max-height: 30%;
   border-radius: 20px;
-  margin: 10px 0px 20px;
+  margin: 20px 0px 20px;
   object-fit: cover;
 }
 .texto-usuario {
-  width: 370px;
+  width: 80%;
   font-size: 20px;
   font-family: "Bangers", sans-serif;
   color: black;
@@ -287,10 +288,11 @@ a {
 }
 
 .contenedorBoton {
+  width: 100%;
   display: flex;
   justify-content: flex-end; /* Coloca el botón al final del contenedor */
   align-items: end;
-  transform: translateX(140px);
+  transform: translateX(-2%);
 }
 
 .corazonBoton {
@@ -322,20 +324,20 @@ a {
     transform: scale(1);
   }
 }
-
+/* LA derecha de la pagina */
 .parteDerechaMain{
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 100%;
+ width: 150%;
 }
 
 .zonaBienvenida{
-  width: 600px;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   margin-top: 50px;
-  border: 1px solid #01137a;
+  border: 1px solid  #01137ac2;;
   background-color: rgba(11, 17, 49, 0.6);
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -348,10 +350,10 @@ a {
 }
 
 .zonaGruposMain{
-  width: 600px;
+  width: 100%;
   height: 395px;
   margin-top: 50px;
-  border: 1px solid #01137a;
+  border: 1px solid  #01137ac2;;
   background-color: rgba(11, 17, 49, 0.6);
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -369,17 +371,35 @@ a {
 }
 
 .contenedorTextoBienvenida{
-  width: 550px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
   border: 1px solid #01137a;
-  background-color: white;
+  background-color:  rgb(206, 206, 206);;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: black;
   font-family:"Bangers", sans-serif ;
-  font-size: 20px;
+  font-size: 2.5vh;
+  word-wrap: break-word;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorGrupos{
+  width: 100%;
+  height: 90%;
+  margin-top: 50px;
+  border: 1px solid  black;;
+  background-color: rgb(206, 206, 206);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family:"Bangers", sans-serif ;
+  font-size: 2.5vh;
   word-wrap: break-word;
   flex-grow: 1;
 }
