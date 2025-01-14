@@ -279,12 +279,19 @@ a {
   object-fit: cover;
 }
 .texto-usuario {
-  width: 80%;
-  font-size: 20px;
-  font-family: "Bangers", sans-serif;
-  color: black;
-  word-wrap: break-word;
-  flex-grow: 1;
+  width: 100%;
+    height: 100%;
+    font-size: 2vh;
+    font-family: "Bangers", sans-serif;
+    color: black;
+    word-wrap: break-word;
+    flex-grow: 1;
+    padding: 0px 5px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .contenedorBoton {
@@ -511,12 +518,19 @@ a {
 }
 
 .texto-usuario2 {
-  width: 80%;
+  width: 100%;
+  height: 100%;
   font-size: 2vh;
   font-family: "Bangers", sans-serif;
   color: black;
   word-wrap: break-word;
   flex-grow: 1;
+  padding: 0px 5px 0px;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .contenedorTextoEImagen2 {
@@ -531,3 +545,92 @@ a {
 }
 
 /* MOVILES */
+.towMovil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-carrusel3 {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor-carrusel3 {
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+  border: 1px solid #01137ac2;
+  background-color: rgba(11, 17, 49, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-usuario3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+}
+
+.imagen-usuario3 {
+  border: 1.5px solid black;
+  width: 70%;
+  min-height: 120px;
+  max-height: 30%;
+  border-radius: 20px;
+  margin: 20px 0px 20px;
+  object-fit: cover;
+}
+
+.corazonBoton3 {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  transform-origin: center;
+}
+
+.corazonBoton3.clicado {
+  color: rgb(255, 103, 15);
+  animation: bombeo 2s ease infinite;
+}
+
+.corazonBoton3 i {
+  font-size: 24px;
+}
+
+.texto-usuario3 {
+  width: 100%;
+    height: 100%;
+    font-size: 2vh;
+    font-family: "Bangers", sans-serif;
+    color: black;
+    word-wrap: break-word;
+    flex-grow: 1;
+    padding: 0px 5px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.contenedorTextoEImagen3 {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  border: 1.5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
