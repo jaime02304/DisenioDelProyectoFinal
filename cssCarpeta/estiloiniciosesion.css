@@ -303,9 +303,9 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   margin: 10px 5px;
-  margin-right: 20px;
+  margin-right: 50px;
   height: 65px;
-  width: 200px;
+  width: 80%;
   color: #212121;
   text-decoration: none;
   font-size: 40px;
@@ -410,7 +410,7 @@ input::placeholder {
   transform: rotateY(180deg);
 }
 
-.inicioSesionTitulo1, .registroTitulo1{
+.inicioSesionTitulo1{
   margin-bottom: 40px;
   color: white;
   font-family: "Press Start 2P", cursive;
@@ -420,6 +420,7 @@ input::placeholder {
 
 .registroTitulo1{
   margin-top: 40px;
+  margin-bottom: 20px;
   color: white;
   font-family: "Press Start 2P", cursive;
   text-transform: uppercase;
@@ -427,8 +428,9 @@ input::placeholder {
 }
 
 .botonIS1{
-  margin: 20px;
+  margin: 10px;
 }
+
 
 .social-contenedor3 a {
   position: relative;
@@ -467,3 +469,19 @@ input::placeholder {
   color: skyblue;
 }
 
+.debajoDeLosInputs button{
+  width: auto;
+}
+
+.debajoDeLosInputs social-contenedor2{
+  width: auto;
+  font-weight: 1vb;
+}
+
+.formsm input{
+  padding: 5px;
+}
+
+.botonRegistro{
+  margin: 0px;
+}
