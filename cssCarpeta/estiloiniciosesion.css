@@ -440,8 +440,7 @@ input::placeholder {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 5px;
-  margin-right: 20px;
+  margin: 10px;
   height: 40px;
   width: 80px;
   color: #212121;
