@@ -1,0 +1,50 @@
+.imagenUsuPerfil{
+    width: 40%;
+    height: 20%;
+    margin-left:10% ;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.aliasPerfil{
+    font-family: "Bangers", sans-serif;
+    color: black;
+    font-size: 4vb;
+    margin-right: 30%;
+    text-align: center;
+
+}
+
+.contenedorInfoPerfil{
+    height: 100%;
+
+}
+.encabezado{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: rgb(206, 206, 206);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.columnaPrincipal{
+    height: 100%;
+}
+
+.contenedorPrincipalPerfil{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #01137ac2;
+    background-color: rgba(11, 17, 49, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.contenedorMainPerfil{
+    width: 100%;
+    padding-bottom: 10px;
+    height: 80%;
+}
